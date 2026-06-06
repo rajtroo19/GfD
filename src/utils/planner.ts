@@ -790,7 +790,7 @@ export function getMealPlan(
           unit: "g",
           estimatedCost: Math.round(50 * costMult),
           substitutes: [
-            { name: `Standard ${cheapProteinName}`, estimatedCost: Math.round(20 * costMult), type: "cheaper", quantity: "200g", amount: 200, unit: "g" }
+            { name: `Standard ${cheapProteinName}`, estimatedCost: Math.round(20 * costMult), type: "cheaper" as const, quantity: "200g", amount: 200, unit: "g" }
           ]
         },
         {
@@ -815,7 +815,7 @@ export function getMealPlan(
           unit: "g",
           estimatedCost: Math.round(35 * costMult),
           substitutes: [
-            { name: "Broken Rice (Kani)", estimatedCost: Math.round(15 * costMult), type: "cheaper", quantity: "250g", amount: 250, unit: "g" }
+            { name: "Broken Rice (Kani)", estimatedCost: Math.round(15 * costMult), type: "cheaper" as const, quantity: "250g", amount: 250, unit: "g" }
           ]
         },
         {
@@ -840,7 +840,7 @@ export function getMealPlan(
           unit: "g",
           estimatedCost: Math.round(75 * costMult),
           substitutes: [
-            { name: `Local ${cheapProteinName}`, estimatedCost: Math.round(30 * costMult), type: "cheaper", quantity: "200g", amount: 200, unit: "g" }
+            { name: `Local ${cheapProteinName}`, estimatedCost: Math.round(30 * costMult), type: "cheaper" as const, quantity: "200g", amount: 200, unit: "g" }
           ]
         },
         {
